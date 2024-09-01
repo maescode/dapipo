@@ -13,6 +13,19 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      backgroundPosition: {
+        "gallery-custom-position": "top right 80px, bottom left 80px",
+        "team-custom-position": "bottom right, bottom left 80px",
+      },
+
+      colors: {
+        green: {
+          100: "#00715D",
+        },
+        blue: {
+          100: "#E9F7F8",
+        },
+      },
     },
   },
   plugins: [],
