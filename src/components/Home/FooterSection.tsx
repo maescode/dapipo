@@ -11,7 +11,7 @@ function FooterSection() {
       // whileInView={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="px-5 py-10 sm:p-20 sm:pb-30 sm:flex space-y-10 sm:space-x-0 h-[680px] sm:h-auto"
+      className="px-5 py-10 sm:p-20 sm:pb-30 sm:flex space-y-10 sm:space-x-0"
     >
       <div className="flex-1 flex flex-col gap-y-5">
         <h2 className="text-3xl font-bold">Dapipo</h2>
