@@ -11,11 +11,11 @@ function FooterSection() {
       // whileInView={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="p-20 pb-30 flex"
+      className="px-5 py-10 sm:p-20 sm:pb-30 sm:flex space-y-10 sm:space-x-0 h-[680px] sm:h-auto"
     >
       <div className="flex-1 flex flex-col gap-y-5">
         <h2 className="text-3xl font-bold">Dapipo</h2>
-        <p className="w-[350px]">
+        <p className="sm:w-[350px] w-full sm:text-base text-sm">
           Subscribe to our newsletter for updates and information.
         </p>
         <div className="flex w-[267px] bg-[#bfd3c7] px-3 rounded-md">
@@ -45,8 +45,8 @@ function FooterSection() {
           />
         </div>
       </div>
-      <div className="flex-1 grid grid-cols-3 gap-5">
-        <div></div>
+      <div className="flex-1 grid sm:grid-cols-3 grid-cols-2 gap-5">
+        <div className="hidden sm:block"></div>
         <div>
           <h6 className="mb-5 text-lg font-semibold">Help</h6>
           <LinkList
@@ -73,7 +73,7 @@ const LinkList = (props: { links: Array<string> }) => {
   return (
     <div className="flex flex-col gap-5">
       {props.links.map((link, idx) => (
-        <Link href={slugify("#")} key={idx}>
+        <Link href={slugify("#")} className="text-sm sm:text-base" key={idx}>
           {link}
         </Link>
       ))}

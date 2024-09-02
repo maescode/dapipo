@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import clsx from "clsx";
 
 function StatSection() {
   return (
@@ -9,7 +10,7 @@ function StatSection() {
       //whileInView={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="h-[322px] bg-green-100 bg-[url('/images/stats-background.svg')] bg-no-repeat bg-cover bg-right px-20 text-white flex items-center justify-center gap-20"
+      className="sm:h-[322px] h:auto bg-green-100 sm:bg-[url('/images/stats-background.svg')] bg-no-repeat bg-cover bg-right px-5 sm:px-20 py-20 sm:py-0 text-white sm:flex items-center justify-center gap-20 space-y-6 sm:space-y-0 mb-5 sm:mb-0"
     >
       {stats.map((stat, idx) => (
         <StartCard key={idx} {...stat} />
@@ -22,7 +23,7 @@ export default StatSection;
 
 const StartCard = (props: { icon: string; title: string; value: string }) => {
   return (
-    <div className="flex items-center gap-2">
+    <div className={clsx("flex items-center gap-2")}>
       <Image
         src={`/icons/${props.icon}.svg`}
         alt={props.title}

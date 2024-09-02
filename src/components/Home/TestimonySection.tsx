@@ -34,12 +34,12 @@ function TestimonySection() {
       // whileInView={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="h-[580px] bg-green-100 px-20 text-white font-normal"
+      className="h-auto sm:h-[580px] bg-green-100 px-5 sm:py-0 py-10 sm:px-20 text-white font-normal"
     >
-      <div className="flex">
+      <div className="sm:flex block">
         <div className="flex-1 flex flex-col justify-center gap-y-10">
           <Image src="/icons/quote.svg" alt="quote" width={80} height={80} />
-          <p className="w-[600px]">{testimony.quote}</p>
+          <p className="sm:w-[600px]">{testimony.quote}</p>
           <div>
             <h6 className="font-semibold">{testimony.name}</h6>
             <p className="font-light">{testimony.role}</p>
@@ -53,7 +53,7 @@ function TestimonySection() {
             onClick={nextTestimony}
           />
         </div>
-        <div className="h-full flex flex-col items-center">
+        <div className="h-full hidden sm:flex flex-col items-center">
           <Image
             src={`/images/${testimony.image}.png`}
             alt="hero image"
@@ -61,6 +61,16 @@ function TestimonySection() {
             width={400}
             height={400}
           />
+        </div>
+        <div className="h-full sm:hidden flex items-center justify-end">
+          <div className="w-28 h-28 border rounded-full overflow-hidden -mt-20 mr-20">
+            <Image
+              src={`/images/${testimony.image}.png`}
+              alt="hero image"
+              width={300}
+              height={300}
+            />
+          </div>
         </div>
       </div>
     </motion.div>
