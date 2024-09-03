@@ -8,10 +8,10 @@ function FooterSection() {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      // whileInView={{ opacity: 1 }}
+      whileInView={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="px-5 py-10 sm:p-20 sm:pb-30 sm:flex space-y-10 sm:space-x-0"
+      className="px-5 py-10 sm:p-20  flex flex-col sm:flex-row  space-y-10 sm:space-x-0"
     >
       <div className="flex-1 flex flex-col gap-y-5">
         <h2 className="text-3xl font-bold">Dapipo</h2>
@@ -48,7 +48,7 @@ function FooterSection() {
       <div className="flex-1 grid sm:grid-cols-3 grid-cols-2 gap-5">
         <div className="hidden sm:block"></div>
         <div>
-          <h6 className="mb-5 text-lg font-semibold">Help</h6>
+          <h6 className="mb-5 text-base sm:text-lg font-semibold">Help</h6>
           <LinkList
             links={[
               "FAQs",
@@ -59,7 +59,9 @@ function FooterSection() {
           />
         </div>
         <div>
-          <h6 className="mb-5 text-lg font-semibold">Active Campaigns</h6>
+          <h6 className="mb-5 text-base sm:text-lg font-semibold">
+            Active Campaigns
+          </h6>
           <LinkList links={["India", "Singapore", "Thailand", "Nigeria"]} />
         </div>
       </div>

@@ -25,6 +25,7 @@ const config: Config = {
         blue: {
           100: "#E9F7F8",
         },
+        primary: "#f1ece0",
       },
     },
   },

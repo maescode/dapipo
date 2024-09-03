@@ -31,7 +31,7 @@ function TestimonySection() {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      // whileInView={{ opacity: 1 }}
+      whileInView={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       className="h-auto sm:h-[580px] bg-green-100 px-5 sm:py-0 py-10 sm:px-20 text-white font-normal"

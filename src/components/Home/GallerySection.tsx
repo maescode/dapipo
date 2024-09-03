@@ -6,7 +6,7 @@ function GallerySection() {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      // whileInView={{ opacity: 1 }}
+      whileInView={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       className="sm:h-[712px] p-5 sm:p-20 sm:bg-[url('/images/inverted-curved-rectangle.svg'),_url('/images/upright-curved-rectangle.svg')] sm:bg-gallery-custom-position sm:bg-no-repeat space-x-0"
