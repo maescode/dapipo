@@ -13,7 +13,7 @@ function FooterSection() {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      animate={{ opacity: 1 }}
+      //animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       className="px-5 py-10 sm:p-20  flex flex-col sm:flex-row  space-y-10 sm:space-x-0"
     >

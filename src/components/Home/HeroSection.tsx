@@ -5,7 +5,7 @@ function HeroSection() {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      animate={{ opacity: 1 }}
+      //animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       className="sm:grid grid-cols-2 sm:h-[700px] h-[500px] px-5 sm:px-20 pb-5 bg-[url('/images/hero-mobile-pattern.svg')] sm:bg-[url('/images/hero_pattern.svg')] bg-no-repeat bg-[bottom_-350px_right_-100px] bg-[length:100%_100%] sm:bg-auto  sm:bg-[left_10%_bottom]"
     >
@@ -20,7 +20,7 @@ function HeroSection() {
           <button className="button block">Change a Life</button>
         </div>
       </div>
-      <div className="hidden sm:block bg-[url('/images/hero-image.svg')] bg-no-repeat bg-cover bg-right"></div>
+      <div className="hidden sm:block bg-[url('/images/hero-image.png')] bg-no-repeat bg-cover bg-right"></div>
     </motion.div>
   );
 }

@@ -7,18 +7,18 @@ function AboutSection() {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      animate={{ opacity: 1 }}
+      // animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       className="flex sm:h-[536px] h-auto"
       id="about-us"
     >
       <div className="hidden h-full flex-1 sm:flex flex-col items-center sm:bg-[url('/images/about-background.svg')] sm:bg-no-repeat bg-left px-5 sm:px-20 pt-10">
         <Image
-          src="/images/about-image.svg"
+          src="/images/about-image.png"
           alt="hero image"
-          className="p-5"
-          width={496}
-          height={496}
+          className="p-10"
+          width={490}
+          height={490}
         />
       </div>
       <div className="relative flex-1 sm:flex flex-col justify-center space-y-10 sm:space-y-0  sm:gap-y-7 h-full text-black px-5 sm:px-20 py-10 sm:py-0 sm:bg-[url('/images/inverted-curved-rectangle.svg')] bg-no-repeat  bg-[top_right_80px] sm:pt-10">
@@ -34,9 +34,9 @@ function AboutSection() {
           <button className="outline-button">Read More</button>
         </div>
         <Image
-          src="/images/about-image.svg"
+          src="/images/about-image.png"
           alt="hero image"
-          className="sm:hidden absolute -top-40 -right-5 p-5"
+          className="sm:hidden absolute -top-36 -right-5 p-5"
           width={300}
           height={300}
         />

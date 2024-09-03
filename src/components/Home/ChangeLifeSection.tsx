@@ -6,7 +6,7 @@ function ChangeLifeSection() {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      animate={{ opacity: 1 }}
+      // animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       className=" bg-green-100 text-white px-5 py-10 sm:p-20 sm:flex space-y-5 sm:space-y-0"
     >

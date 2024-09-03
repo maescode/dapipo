@@ -8,7 +8,7 @@ function OurTeamSection() {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      animate={{ opacity: 1 }}
+      //animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       className="h-auto sm:h-[736px] sm:bg-[url('/images/our-team-pattern.svg'),__url('/images/upright-curved-rectangle.svg')] sm:bg-team-custom-position bg-no-repeat px-5 py-10 sm:py-0  sm:px-20 sm:pt-10"
     >
@@ -41,7 +41,7 @@ const TeamCard = (props: {
       )}
     >
       <Image
-        src={`/images/${props.image}.svg`}
+        src={`/images/${props.image}.png`}
         alt="hero image"
         className="rounded-full"
         height={250}

@@ -8,7 +8,7 @@ function StatSection() {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      animate={{ opacity: 1 }}
+      //animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       className="sm:h-[322px] h:auto bg-green-100 sm:bg-[url('/images/stats-background.svg')] bg-no-repeat bg-cover bg-right px-5 sm:px-20 py-20 sm:py-0 text-white sm:flex items-center justify-center gap-20 space-y-6 sm:space-y-0 mb-5 sm:mb-0"
     >

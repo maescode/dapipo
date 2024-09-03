@@ -32,7 +32,7 @@ function TestimonySection() {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      animate={{ opacity: 1 }}
+      // animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       className="h-auto sm:h-[580px] bg-green-100 px-5 sm:py-0 py-10 sm:px-20 text-white font-normal"
     >
@@ -63,7 +63,7 @@ function TestimonySection() {
           />
         </div>
         <div className="h-full sm:hidden flex items-center justify-end">
-          <div className="w-28 h-28 border rounded-full overflow-hidden -mt-20 mr-20">
+          <div className="w-28 h-28 border rounded-full overflow-hidden -mt-16 mr-12">
             <Image
               src={`/images/${testimony.image}.png`}
               alt="hero image"
