@@ -5,6 +5,10 @@ import { slugify } from "@/utilities/helpers";
 import Image from "next/image";
 
 function FooterSection() {
+  const [email, setEmail] = React.useState("");
+  const handleSubmit = () => {
+    alert("Thank you for subscribing!");
+  };
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -23,6 +27,8 @@ function FooterSection() {
             type="text"
             name="email"
             placeholder="Your email address"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             className="h-[44px] p-2 bg-[#bfd3c7] border-0 flex-1 focus:outline-none placeholder:text-black placeholder:font-light"
           />
           <div className="flex items-center justify-end">
@@ -32,6 +38,7 @@ function FooterSection() {
               alt="send"
               width={30}
               height={30}
+              onClick={handleSubmit}
             />
           </div>
         </div>
