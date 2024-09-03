@@ -8,6 +8,7 @@ function FooterSection() {
   const [email, setEmail] = React.useState("");
   const handleSubmit = () => {
     alert("Thank you for subscribing!");
+    setEmail("");
   };
   return (
     <motion.div
